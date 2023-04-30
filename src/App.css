@@ -5,9 +5,22 @@
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: lightgrey;
+}
+
+.cash {
+  min-width: 100px;
+  padding: 10px 20px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #f50f0f;
+  border: 2px solid rgb(97, 166, 245);
+  border-radius: 10px;
+  background: rgb(243, 244, 233);
 }
 
 button {
