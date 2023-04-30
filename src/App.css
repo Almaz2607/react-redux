@@ -1,0 +1,25 @@
+.App {
+  width: 700px;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgrey;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid rgb(14, 70, 133);
+  background: rgb(80, 166, 212);
+  border-radius: 8px;
+}
+
+.buttons :not(:last-child) {
+  margin-right: 15px;
+}
