@@ -27,12 +27,33 @@ button {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: 2px solid rgb(14, 70, 133);
-  background: rgb(80, 166, 212);
+  background: rgb(64, 155, 203);
   border-radius: 8px;
+  margin: 10px 0;
+}
+
+.buttons {
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  border-radius: 5px;
+  background: rgb(232, 224, 246);
+  margin-bottom: 20px;
 }
 
 .buttons :not(:last-child) {
   margin-right: 15px;
+}
+
+.customer {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid rgb(50, 144, 142);
+  border-radius: 5px;
+  background: rgb(237, 230, 230);
+  margin: 5px 0;
 }
