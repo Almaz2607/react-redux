@@ -3,6 +3,7 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addCustomerAC, removeCustomerAC } from "./store/customerReducer";
 import { addCashAC, getCashAC } from "./store/cashReducer";
+import { fetchCustomers } from "./asyncAction/customers";
 
 function App() {
   const dispatch = useDispatch();
@@ -29,6 +30,10 @@ function App() {
     dispatch(removeCustomerAC(customer.id));
   }
 
+  function addManyCustomers() {
+    dispatch(fetchCustomers());
+  }
+
   return (
     <div className="App">
       <p className="cash">{cash}</p>
@@ -40,6 +45,9 @@ function App() {
           Снять со счета
         </button>
         <button onClick={() => addCustomer(prompt())}>Добавить клиента</button>
+        <button onClick={() => addManyCustomers()}>
+          Добавить клиентов из базы
+        </button>
       </div>
       {customers.length > 0 ? (
         customers.map((customer) => (
